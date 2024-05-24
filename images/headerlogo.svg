@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151 49" width="151" height="49">
+	<title>New Project</title>
+	<defs>
+		<image  width="58" height="50" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAyCAMAAAA6Njh3AAAAAXNSR0IB2cksfwAAAGxQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////NhtAPQAAACR0Uk5TAP+aFICmoNOGZi3Gk3onOrmNIEcaM/kZFW3A881N5kBTc7Ot5tmNrQAAAXNJREFUeJy91ntPgzAQAPAjgoNJWGRBjZt/+P2/k4nOZ5w6RSXbECyPsj6hPRcvCynlfjtooK0DveGQX6G/1hMHFStR1P3BUS/fVc8V13X0cCt2rM2oL+VVndkwHWeKzir4p1bQo2+NJJc+e2n/mDOFpcR+yVoxc0gyVkgdlhCmytwolVO1ZTk6+TCQneWowe3WFVZo2pZls01la/dDj1doal4Uxl9oWpfdC43f0NTwVVLR6SuawrQgL78LOQRkSsurplfNbbkLzbHuIkc3yMIl2I2NEA21ek6eomo3KFnay+TPz/rvtLYTxfd2+sSdnj0KFd2GSmto5D/LfybM3gKNR2n0oL/H87ud9Cmd3euBWLgllBoOV9kNbAl2dHZLZzCyXFpWpTFfAJJe3ACWNqOFoe3CgaB0pbOm3gaQNH6hLUr9snBPnLV/rdsRtnF51TWVr3+yfddINs+ZF8GiFDeEJEYbuY/bcfV+6nG4YM7ELSL8Aqdualof/0q1AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 24px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+	</style>
+	<use id="Layer 1" href="#img1" x="0" y="0"/>
+	<text id="Tistava" style="transform: matrix(1,0,0,1,61,47)" >
+		<tspan x="0" y="0" class="t0">T</tspan><tspan  y="0" class="t0">istava
+</tspan>
+	</text>
+</svg>
