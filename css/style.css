@@ -482,10 +482,6 @@ nav.site-nav {
 
 .hotelcard {
   padding: 100px 0;
-  background-image: url(../images/bgmain.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .hotelcard-inner img {
   height: 330px;
