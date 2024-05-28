@@ -391,7 +391,7 @@ nav.site-nav {
 
 /*End Faq css*/
 
-/*homebanner-css-start*/
+/*home-css-start*/
 .homebanner.banner {
     background-image: url(../images/homebanner.jpg);
     height: 700px;
@@ -471,5 +471,55 @@ nav.site-nav {
     }
 }
 
-/*homebanner-css-end*/
+/*home-css-end*/
+
+/*Casinohotel-css-start*/
+.casinohotelbanner.banner{
+    background-image: url(../images/casinohotelbanner.jpg);
+    background-position: center;
+}
+.toptext {
+    padding: 50px 0;
+}
+.commoncard {
+    &__picture {
+        img {
+            height: 500px;
+            object-fit: cover;
+            max-width: 560px;
+            border-radius: 8px;
+            width: 100%;
+            transition: all .3s linear;
+
+            &:hover {
+                filter: grayscale(1);
+            }
+        }
+    }
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        p{
+            position: relative;
+        }
+        p::before{
+            position: absolute;
+            content: "";
+            inset: 0;
+            background-color: #001934;
+            height: 7px;
+            width: 7px;
+            border-radius: 10px;
+            top: 10px;
+            left: -15px;
+        }
+    }
+}
+
+
+/*Casinohotel-css-end*/
 /*# sourceMappingURL=style.css.map */

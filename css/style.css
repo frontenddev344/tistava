@@ -39,7 +39,8 @@ a.primary-button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
+  height: 450px;
+  position: relative;
 }
 
 .banner::after {
@@ -48,7 +49,7 @@ a.primary-button:hover {
   inset: 0;
   background: rgba(0, 0, 0, 0.44);
   z-index: 0;
-  height: 350px;
+  height: 450px;
 }
 
 .bannertitle {
@@ -468,7 +469,7 @@ nav.site-nav {
 }
 
 /*End Faq css*/
-/*homebanner-css-start*/
+/*home-css-start*/
 .homebanner.banner {
   background-image: url(../images/homebanner.jpg);
   height: 700px;
@@ -532,7 +533,51 @@ nav.site-nav {
   color: var(--green);
 }
 
-/*homebanner-css-end*/
+/*home-css-end*/
+/*Casinohotel-css-start*/
+.casinohotelbanner.banner {
+  background-image: url(../images/casinohotelbanner.jpg);
+  background-position: center;
+}
+
+.toptext {
+  padding: 50px 0;
+}
+
+.commoncard__picture img {
+  height: 500px;
+  object-fit: cover;
+  max-width: 560px;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.3s linear;
+}
+.commoncard__picture img:hover {
+  filter: grayscale(1);
+}
+.commoncard__part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.commoncard__part p {
+  position: relative;
+}
+.commoncard__part p::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #001934;
+  height: 7px;
+  width: 7px;
+  border-radius: 10px;
+  top: 10px;
+  left: -15px;
+}
+
+/*Casinohotel-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

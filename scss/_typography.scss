@@ -26,7 +26,8 @@ a.primary-button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 450px;
+    position: relative;
 }
 
 .banner::after {
@@ -35,7 +36,7 @@ a.primary-button {
     inset: 0;
     background: rgba(0, 0, 0, 0.44);
     z-index: 0;
-    height: 350px;
+    height: 450px;
 }
 
 .bannertitle {
