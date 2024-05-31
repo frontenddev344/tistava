@@ -103,6 +103,7 @@ h3 {
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
+  color: var(--pink);
 }
 
 h4 {
@@ -569,7 +570,7 @@ nav.site-nav {
   position: absolute;
   content: "";
   inset: 0;
-  background-color: #001934;
+  background-color: var(--green);
   height: 7px;
   width: 7px;
   border-radius: 10px;
@@ -579,6 +580,22 @@ nav.site-nav {
 
 footer.section-footer.ptb-50 {
   background: var(--green);
+}
+
+.tiles-picture img {
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+.tiles-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.disclamier-text span {
+  color: var(--green);
+  font-weight: 600;
 }
 
 /*Casinohotel-css-end*/
