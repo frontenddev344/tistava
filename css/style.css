@@ -577,6 +577,10 @@ nav.site-nav {
   left: -15px;
 }
 
+footer.section-footer.ptb-50 {
+  background: var(--green);
+}
+
 /*Casinohotel-css-end*/
 
 
