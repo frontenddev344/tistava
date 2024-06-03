@@ -475,13 +475,15 @@ nav.site-nav {
 /*home-css-end*/
 
 /*Casinohotel-css-start*/
-.casinohotelbanner.banner{
+.casinohotelbanner.banner {
     background-image: url(../images/casinohotelbanner.jpg);
     background-position: center;
 }
+
 .toptext {
     padding: 50px 0;
 }
+
 .commoncard {
     &__picture {
         img {
@@ -504,10 +506,12 @@ nav.site-nav {
         justify-content: center;
         height: 100%;
         position: relative;
-        p{
+
+        p {
             position: relative;
         }
-        p::before{
+
+        p::before {
             position: absolute;
             content: "";
             inset: 0;
@@ -526,23 +530,46 @@ footer.section-footer.ptb-50 {
 }
 
 
-.tiles{
-&-picture{
-    img{
-        max-width: 500px;
-        margin: 0 auto;
-        display: block;
+.tiles {
+    &-picture {
+        img {
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 }
-&-btn{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+
+.disclamier-text {
+    padding-bottom: 50px;
 }
-}
+
 .disclamier-text span {
     color: var(--green);
     font-weight: 600;
 }
+
 /*Casinohotel-css-end*/
+
+/*dining-css-start*/
+.diningbanner.banner {
+    background-image: url(../images/diningbanner.jpg);
+    background-position: center;
+}
+
+/*dining-css-end*/
+
+/*events-css-start*/
+.eventbanner.banner {
+    background-image: url(../images/eventbanner.jpg);
+    background-position: center;
+}
+
+/*events-css-end*/
 /*# sourceMappingURL=style.css.map */

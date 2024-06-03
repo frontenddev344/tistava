@@ -39,7 +39,7 @@ a.primary-button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 550px;
   position: relative;
 }
 
@@ -49,7 +49,7 @@ a.primary-button:hover {
   inset: 0;
   background: rgba(0, 0, 0, 0.44);
   z-index: 0;
-  height: 450px;
+  height: 550px;
 }
 
 .bannertitle {
@@ -593,12 +593,30 @@ footer.section-footer.ptb-50 {
   margin-bottom: 20px;
 }
 
+.disclamier-text {
+  padding-bottom: 50px;
+}
+
 .disclamier-text span {
   color: var(--green);
   font-weight: 600;
 }
 
 /*Casinohotel-css-end*/
+/*dining-css-start*/
+.diningbanner.banner {
+  background-image: url(../images/diningbanner.jpg);
+  background-position: center;
+}
+
+/*dining-css-end*/
+/*events-css-start*/
+.eventbanner.banner {
+  background-image: url(../images/eventbanner.jpg);
+  background-position: center;
+}
+
+/*events-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

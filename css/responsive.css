@@ -38,7 +38,7 @@ a.primary-button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 550px;
   position: relative;
 }
 
@@ -48,7 +48,7 @@ a.primary-button:hover {
   inset: 0;
   background: rgba(0, 0, 0, 0.44);
   z-index: 0;
-  height: 450px;
+  height: 550px;
 }
 
 .bannertitle {
