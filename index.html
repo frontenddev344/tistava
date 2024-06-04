@@ -9,6 +9,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -76,8 +77,10 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="hotelcard-main">
             <div class="hotelcard-inner">
-              <img src="images/hotelcard1.jpeg" alt="hotelcard1" class="img-fluid">
+              <div data-aos="flip-left">
+<img src="images/hotelcard1.jpeg" alt="hotelcard1" class="img-fluid">
             </div>
+          </div>
             <div class="hotel-text">
               <a href="casino-hotels.html">Casino Hotelis</a>
             </div>
@@ -86,7 +89,9 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="hotelcard-main">
             <div class="hotelcard-inner">
+              <div data-aos="flip-right">
               <img src="images/hotelcard2.webp" alt="hotelcard2" class="img-fluid">
+            </div>
             </div>
             <div class="hotel-text">
               <a href="dining.html">Obedovanje
@@ -97,7 +102,9 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="hotelcard-main">
             <div class="hotelcard-inner">
+              <div data-aos="flip-left">
               <img src="images/hotelcard3.webp" alt="hotelcard3" class="img-fluid">
+            </div>
             </div>
             <div class="hotel-text">
               <a href="events.html">Dogodki </a>
@@ -107,7 +114,9 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="hotelcard-main">
             <div class="hotelcard-inner">
+              <div data-aos="flip-right">
               <img src="images/hotelcard4.jpeg" alt="hotelcard4" class="img-fluid">
+            </div>
             </div>
             <div class="hotel-text">
               <a href="sights.html">Znamenitosti </a>
@@ -125,7 +134,9 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="differ-picture">
+            <div data-aos="flip-up">
             <img src="images/diiferpicture1.jpg" alt="diiferpicture1" class="img-fluid">
+          </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -168,14 +179,18 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="differ-picture">
+            <div data-aos="flip-up">
             <img src="images/diiferpicture2.webp" alt="diiferpicture2" class="img-fluid">
           </div>
+        </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="differ-picture">
+            <div data-aos="flip-up">
             <img src="images/diiferpicture3.jpeg" alt="diiferpicture3" class="img-fluid">
+          </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -218,7 +233,9 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="differ-picture">
+            <div data-aos="flip-up">
             <img src="images/diiferpicture4.jpeg" alt="diiferpicture4" class="img-fluid">
+          </div>
           </div>
         </div>
       </div>
@@ -374,6 +391,11 @@
   <script src="js/jquery.js"></script>
   <script src="js/faq.js"></script>
   <script src="js/owl.carousel.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
 
   <script>
