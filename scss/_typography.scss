@@ -16,6 +16,7 @@ a.primary-button {
     padding: 14px 23px;
     border-radius: 5px;
     display: inline-block;
+    margin-top: 15px;
 
     &:hover {
         background: var(--pink);
@@ -78,6 +79,7 @@ h2 {
     font-weight: 500;
     font-family: "Playfair Display";
     color: var(--pink);
+    margin-bottom: 25px;
 
     @include mq(lg) {
         font-size: 28px;

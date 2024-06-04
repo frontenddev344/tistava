@@ -29,6 +29,7 @@ a.primary-button {
   padding: 14px 23px;
   border-radius: 5px;
   display: inline-block;
+  margin-top: 15px;
 }
 a.primary-button:hover {
   background: var(--pink);
@@ -90,6 +91,7 @@ h2 {
   font-weight: 500;
   font-family: "Playfair Display";
   color: var(--pink);
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 992px) {
   h2 {
@@ -307,6 +309,9 @@ h4 {
   }
 }
 @media screen and (max-width: 575px) {
+  .site-logo img {
+    max-width: 13rem;
+  }
   .site-nav {
     width: 100%;
   }

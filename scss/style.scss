@@ -139,7 +139,7 @@ nav.site-nav {
 /*footer-css-start*/
 
 .site-footer {
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65)), url(../images/footerbg.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 68%), rgba(0, 0, 0, 68%)), url(../images/footerbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,7 +239,8 @@ nav.site-nav {
     justify-content: space-between;
     border-top: 1px solid #fff;
 }
-.row.bgimg{
+
+.row.bgimg {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px;
     background-color: #006a728f;
     padding: 0 30px;
@@ -396,20 +397,24 @@ nav.site-nav {
 .differ-content img {
     max-width: 190px;
 }
+
 .differ-picture {
-   overflow: hidden;
+    overflow: hidden;
 }
+
 .differ-picture img {
     margin-left: 50px;
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
+
 .differ-picture:hover img {
     margin-left: 0;
     filter: grayscale(1);
 }
+
 /*End Faq css*/
 
 /*home-css-start*/
@@ -529,6 +534,7 @@ nav.site-nav {
 
         p {
             position: relative;
+            margin-left: 15px;
         }
 
         p::before {
