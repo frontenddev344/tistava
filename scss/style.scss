@@ -139,8 +139,10 @@ nav.site-nav {
 /*footer-css-start*/
 
 .site-footer {
-    box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px;
-    background-color: var(--green);
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65)), url(../images/footerbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-logo img {
@@ -236,6 +238,11 @@ nav.site-nav {
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #fff;
+}
+.row.bgimg{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px;
+    background-color: #006a728f;
+    padding: 0 30px;
 }
 
 /*footer-css-end*/
@@ -389,7 +396,19 @@ nav.site-nav {
 .differ-content img {
     max-width: 190px;
 }
-
+.differ-picture {
+   overflow: hidden;
+}
+.differ-picture img {
+    margin-left: 30px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.differ-picture:hover img {
+    margin-left: 0;
+}
 /*End Faq css*/
 
 /*home-css-start*/
