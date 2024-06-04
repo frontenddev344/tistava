@@ -400,7 +400,7 @@ nav.site-nav {
    overflow: hidden;
 }
 .differ-picture img {
-    margin-left: 30px;
+    margin-left: 50px;
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
 	-webkit-transition: .3s ease-in-out;
@@ -408,6 +408,7 @@ nav.site-nav {
 }
 .differ-picture:hover img {
     margin-left: 0;
+    filter: grayscale(1);
 }
 /*End Faq css*/
 

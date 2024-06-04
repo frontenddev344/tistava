@@ -145,7 +145,7 @@ h4 {
     right: 0;
     bottom: 0;
     width: 300px;
-    background: var(--black);
+    background: var(--green);
     transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
     transform: translateX(-100%);
   }
