@@ -617,6 +617,13 @@ footer.section-footer.ptb-50 {
 }
 
 /*events-css-end*/
+/*sight-css-start*/
+.sightbanner.banner {
+  background-image: url(../images/sightbanner.jpg);
+  background-position: center;
+}
+
+/*sight-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */
