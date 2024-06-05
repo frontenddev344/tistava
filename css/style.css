@@ -618,7 +618,7 @@ footer.section-footer.ptb-50 {
 .tiles-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .disclamier-text {
@@ -628,6 +628,7 @@ footer.section-footer.ptb-50 {
 .disclamier-text span {
   color: var(--green);
   font-weight: 600;
+  margin-right: 8px;
 }
 
 /*Casinohotel-css-end*/

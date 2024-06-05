@@ -239,6 +239,12 @@
         flex-direction: column-reverse;
         text-align: center;
     }
+    .differ-content {
+        margin-top: 15px;
+    }
+    a.primary-button {
+        padding: 12px 12px;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -252,6 +258,9 @@
 
     .footer-links ul {
         gap: 7px;
+    }
+    .faq-question {
+        font-size: 15px;
     }
 }
 
