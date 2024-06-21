@@ -260,25 +260,29 @@ nav.site-nav {
     transform: translateY(100%);
     transition: all 500ms ease-out;
     left: 0;
+}
+
+.card-body {
+    p {
+        color: #000;
     }
-    .card-body{
-        p{
-            color: #000;
-        }
-    }
-    .cookie-alert.show {
+}
+
+.cookie-alert.show {
     opacity: 1;
     transform: translateY(0%);
     transition-delay: 1000ms;
-    }
-    a.btn.btn-primary.accept-cookies {
+}
+
+a.btn.btn-primary.accept-cookies {
     background: var(--green);
     padding: 6px 22px;
     font-size: 20px;
-    color:#fff;
-    border: 1px solid  var(--green);
-    }
-    /*cookie end*/
+    color: #fff;
+    border: 1px solid var(--green);
+}
+
+/*cookie end*/
 
 /*privacy-policy start*/
 .privacy__section.banner {
@@ -613,14 +617,16 @@ footer.section-footer.ptb-50 {
     font-weight: 600;
     margin-right: 8px;
 }
+
 /*Casinohotel-css-end*/
 
 /*contact-css-start*/
 
 .contactbanner.banner {
-background-image: url(../images/contactbanner.jpg);
-background-position: center;
+    background-image: url(../images/contactbanner.jpg);
+    background-position: center;
 }
+
 .contact-form .about_us_content {
     margin: 0 0 30px 0;
 
@@ -641,7 +647,7 @@ background-position: center;
     border: 1px solid #000;
     padding: 2rem 2rem;
     background: transparent;
-    color:#000;
+    color: #000;
 }
 
 .contact-form .input-control:focus-visible {
@@ -664,20 +670,21 @@ background-position: center;
 
     &:hover {
         background-color: transparent;
-        color:#000;
+        color: #000;
     }
 }
 
 .contact-form .form-group label {
     display: inline-block;
     padding-bottom: 5px;
-    color:var(--green) ;
+    color: var(--green);
     transition: all 0.2s linear;
     text-transform: capitalize;
     font-size: 18px;
     font-family: 'Nunito';
 
 }
+
 /*contact-css-end*/
 
 /*dining-css-start*/
@@ -685,6 +692,7 @@ background-position: center;
     background-image: url(../images/diningbanner.jpg);
     background-position: center;
 }
+
 /*dining-css-end*/
 
 /*events-css-start*/
@@ -692,9 +700,11 @@ background-position: center;
     background-image: url(../images/eventbanner.jpg);
     background-position: center;
 }
+
 .faq-section h2 {
     margin-top: 38px;
 }
+
 /*events-css-end*/
 
 /*sight-css-start*/
