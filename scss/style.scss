@@ -281,7 +281,10 @@ a.btn.btn-primary.accept-cookies {
     color: #fff;
     border: 1px solid var(--green);
 }
-
+a.btn.btn-primary.accept-cookies:hover {
+    background: transparent;
+    color: var(--green);
+}
 /*cookie end*/
 
 /*privacy-policy start*/
