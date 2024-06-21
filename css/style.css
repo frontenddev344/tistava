@@ -645,6 +645,10 @@ footer.section-footer.ptb-50 {
   background-position: center;
 }
 
+.faq-section h2 {
+  margin-top: 38px;
+}
+
 /*events-css-end*/
 /*sight-css-start*/
 .sightbanner.banner {
