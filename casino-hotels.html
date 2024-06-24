@@ -76,23 +76,22 @@
       <div class="row">
         <div class="col-12">
           <div class="toptext-container">
-            <p>Las Vegas je sinonim predvsem za eno stvar: igralniške hotele. Te ustanove določajo obzorje mesta in so
-              utripajoče srce njegovega prizorišča zabave. V Las Vegasu so meje med namestitvijo in avanturo zabrisane,
-              saj vsak igralniški hotel obljublja svet vznemirjenja, razkošja in možnosti. Od trenutka, ko stopite v
-              preddverje igralniškega hotela v Las Vegasu, vas obdaja vzdušje razkošja in ekstravagance. Visoki stropi,
-              pokriti z lestenci, marmorna tla in drobni detajli dajejo občutek, kot da ste v drugem svetu. Sama
-              nadstropja igralnice so povezana z evropskimi plemiškimi hišami. Ogromne sobe z igralnimi avtomati,
-              igralnimi mizami in igrami z visokimi limiti vabijo obiskovalce, da preizkusijo svojo srečo in lovijo
-              sanje. Ne glede na to, ali ste izkušen hazarder ali priložnostni igralec, je vznemirjenje igre otipljivo,
-              ko se potopite v razburjenje parketa igralnice. Igralniški hoteli v Las Vegasu ponujajo veliko več kot le
-              igre na srečo. Namestitev sega od apartmajev s panoramskim razgledom na Strip do udobnih sob, zasnovanih
-              za udobje in sprostitev. Spa zmogljivosti, bazeni in fitnes centri so namenjeni gostom, ki iščejo
-              pomladitev in wellness oddih, medtem ko uživajo v razburljivem mestu. Hoteli z igralnicami v Las Vegasu
-              niso samo kraji za prenočišče, so same po sebi destinacije, ki ponujajo vključujočo izkušnjo, ki ujame duh
-              slavnega mesta. Ne glede na to, ali vas privlačijo kazinoji, gurmanske restavracije ali vznemirjenje
-              zabave v živo, igralniški hoteli v Las Vegasu obljubljajo nepozabno pustolovščino, ob kateri se boste
-              hrepeneli vračati znova in znova. </p>
+            <div id="readmore">
+              <div class="readmore__content">
+                <p>Las Vegas je sinonim predvsem za eno stvar: igralniške hotele. Te ustanove določajo obzorje mesta in so utripajoče srce njegovega prizorišča zabave. V Las Vegasu so meje med namestitvijo in avanturo zabrisane, saj vsak igralniški hotel obljublja svet vznemirjenja, razkošja in možnosti. Od trenutka, ko stopite v preddverje igralniškega hotela v Las Vegasu, vas obdaja vzdušje razkošja in ekstravagance.</p>
+                <p>Visoki stropi, pokriti z lestenci, marmorna tla in drobni detajli dajejo občutek, kot da ste v drugem svetu. Sama nadstropja igralnice so povezana z evropskimi plemiškimi hišami. Ogromne sobe z igralnimi avtomati, igralnimi mizami in igrami z visokimi limiti vabijo obiskovalce, da preizkusijo svojo srečo in lovijo sanje. Ne glede na to, ali ste izkušen hazarder ali priložnostni igralec, je vznemirjenje igre otipljivo, ko se potopite v razburjenje parketa igralnice.</p>
+                <p>Igralniški hoteli v Las Vegasu ponujajo veliko več kot le igre na srečo. Namestitev sega od apartmajev s panoramskim razgledom na Strip do udobnih sob, zasnovanih za udobje in sprostitev. Spa zmogljivosti, bazeni in fitnes centri so namenjeni gostom, ki iščejo pomladitev in wellness oddih, medtem ko uživajo v razburljivem mestu. Hoteli z igralnicami v Las Vegasu niso samo kraji za prenočišče, so same po sebi destinacije, ki ponujajo vključujočo izkušnjo, ki ujame duh slavnega mesta. Ne glede na to, ali vas privlačijo kazinoji, gurmanske restavracije ali vznemirjenje zabave v živo, igralniški hoteli v Las Vegasu obljubljajo nepozabno pustolovščino, ob kateri se boste hrepeneli vračati znova in znova.
+              </p>
+            </div>
+              <button class="readmore__toggle" role="switch" aria-checked="true">
+                  Show more
+              </button>
+              </button>
           </div>
+       
+      
+          </div>
+     
         </div>
       </div>
     </div>
@@ -445,7 +444,60 @@
   </script>
 
 
+<script>
+  class readMore {
+    constructor() {
+        this.content = '.readmore__content';
+        this.buttonToggle = '.readmore__toggle';
+    }
 
+    bootstrap() {
+        this.setNodes();
+        this.init();
+        this.addEventListeners();
+    }
+
+    setNodes() {
+        this.nodes = {
+            contentToggle: document.querySelector(this.content)
+        };
+
+        this.buttonToggle = this.nodes.contentToggle.parentElement.querySelector(this.buttonToggle);
+    }
+
+    init() {
+        const { contentToggle } = this.nodes;
+
+        this.stateContent = contentToggle.innerHTML;
+
+        contentToggle.innerHTML = `${this.stateContent.substring(0, 425)}...`;
+    }
+
+    addEventListeners() {
+        this.buttonToggle.addEventListener('click', this.onClick.bind(this))
+    }
+
+    onClick(event) {
+        const targetEvent = event.currentTarget;
+        const { contentToggle } = this.nodes
+
+        if (targetEvent.getAttribute('aria-checked') === 'true') {
+            targetEvent.setAttribute('aria-checked', 'false')
+            contentToggle.innerHTML = this.stateContent;
+            this.buttonToggle.innerHTML = 'Show less'
+
+        } else {
+            targetEvent.setAttribute('aria-checked', 'true')
+            contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`
+            this.buttonToggle.innerHTML = 'Show more'
+        }
+    }
+}
+
+
+const initReadMore = new readMore();
+initReadMore.bootstrap()
+</script>
 
 </body>
 

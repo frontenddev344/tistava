@@ -717,4 +717,25 @@ footer.section-footer.ptb-50 {
 }
 
 /*sight-css-end*/
+
+
+.readmore__content {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  button.readmore__toggle {
+    background: var(--green);
+    color: var(--white);
+    padding: 14px 23px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor:pointer;
+    border: 2px solid var(--green) ;
+    display: block;
+    margin: 0 auto;
+  }
+  .readmore__content p {
+   text-align: center;
+  }
 /*# sourceMappingURL=style.css.map */

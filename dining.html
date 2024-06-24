@@ -74,10 +74,24 @@
       <div class="row">
         <div class="col-12">
           <div class="toptext-container">
-            <p>Las Vegas, znan po živahnem nočnem življenju in vrhunski zabavi, je tudi kulinarični raj za kulinarične navdušence z vsega sveta. Las Vegas z restavracijami z Michelinovo zvezdico ponuja vrhunske restavracije, ki so tako raznolike kot okusne. V osrčju vrhunskih restavracijskih doživetij tega mesta, kjer se izjemna kulinarika in neprekosljiva postrežba srečata z nepozabno kulinariko, je zagotovljeno. Od trenutka, ko stopite v eno od teh restavracij, ste začeli kulinarično popotovanje, ki pusti trajen vtis. 
-                Od izvrstne francoske kuhinje Joëla Robuchona v MGM Grand do klasičnih jedi s sodobnim pridihom v Gordon Ramsay Steak v Paris Las Vegas. Za nepozabno kulinarično izkušnjo se povzpnite v višave restavracije Eifflov stolp v pariškem Las Vegasu ali pa se podajte na kulinarično pustolovščino okoli sveta v bifeju Bacchanal v Caesars Palace, kjer vas čaka več kot 500 jedi, ki bodo navdušile vaše brbončice. Ne glede na to, ali praznujete posebno priložnost, si privoščite romantično večerjo v dvoje ali preprosto želite raziskati okuse, ki jih ponuja Las Vegas, najboljše restavracijske izkušnje v mestu obljubljajo nepozabno kulinarično avanturo, ob kateri boste hrepeneli po več. Zato pripravite svoje brbončice na potovanje epikurejskih užitkov in se pripravite na uživanje najboljšega, kar ponuja Las Vegas. 
-                 </p>
+            <div id="readmore">
+              <div class="readmore__content">
+                <p>Las Vegas, znan po živahnem nočnem življenju in zabavi svetovnega razreda, je tudi kulinarični raj za sladokusce z vsega sveta. Z restavracijami z Michelinovimi zvezdicami Las Vegas ponuja vrhunske restavracije, ki so tako raznolike kot tudi okusne. V osrčju vrhunske kulinarike tega mesta, kjer se izjemna kulinarika in neprimerljiva storitev srečata z nepozabno kuhinjo, je zagotovljeno. Od trenutka, ko stopite v eno od teh restavracij, ste začeli kulinarično popotovanje, ki pusti trajen vtis.
+                </p>
+                <p>Od izvrstne francoske kuhinje Joëla Robuchona v MGM Grand do klasičnih jedi s sodobnim pridihom v Gordon Ramsay Steak v Paris Las Vegas. Za nepozabno kulinarično doživetje se povzpnite v višave restavracij Eifflovega stolpa v pariškem Las Vegasu ali se podajte na kulinarično pustolovščino okoli sveta v bifeju Bacchanal v Caesars Palace, kjer vas čaka več kot 500 jedi, ki bodo razveselile vaše brbončice.
+                </p>
+                <p>Ne glede na to, ali praznujete posebno priložnost, uživate v romantični večerji v dvoje ali preprosto želite raziskati okuse, ki jih ponuja Las Vegas, najboljše kulinarične izkušnje v mestu obljubljajo nepozabno kulinarično avanturo, ob kateri boste hrepeneli po več. Zato pripravite svoje brbončice na potovanje epikurejskih užitkov in se pripravite na uživanje v najboljšem, kar ponuja Las Vegas.
+                </p>
+            </div>
+              <button class="readmore__toggle" role="switch" aria-checked="true">
+                  Show more
+              </button>
+              </button>
           </div>
+       
+      
+          </div>
+     
         </div>
       </div>
     </div>
@@ -466,7 +480,60 @@
     });
   </script>
 
+<script>
+  class readMore {
+    constructor() {
+        this.content = '.readmore__content';
+        this.buttonToggle = '.readmore__toggle';
+    }
 
+    bootstrap() {
+        this.setNodes();
+        this.init();
+        this.addEventListeners();
+    }
+
+    setNodes() {
+        this.nodes = {
+            contentToggle: document.querySelector(this.content)
+        };
+
+        this.buttonToggle = this.nodes.contentToggle.parentElement.querySelector(this.buttonToggle);
+    }
+
+    init() {
+        const { contentToggle } = this.nodes;
+
+        this.stateContent = contentToggle.innerHTML;
+
+        contentToggle.innerHTML = `${this.stateContent.substring(0, 425)}...`;
+    }
+
+    addEventListeners() {
+        this.buttonToggle.addEventListener('click', this.onClick.bind(this))
+    }
+
+    onClick(event) {
+        const targetEvent = event.currentTarget;
+        const { contentToggle } = this.nodes
+
+        if (targetEvent.getAttribute('aria-checked') === 'true') {
+            targetEvent.setAttribute('aria-checked', 'false')
+            contentToggle.innerHTML = this.stateContent;
+            this.buttonToggle.innerHTML = 'Show less'
+
+        } else {
+            targetEvent.setAttribute('aria-checked', 'true')
+            contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`
+            this.buttonToggle.innerHTML = 'Show more'
+        }
+    }
+}
+
+
+const initReadMore = new readMore();
+initReadMore.bootstrap()
+</script>
 
 
 </body>
