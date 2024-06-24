@@ -84,7 +84,7 @@
               </p>
             </div>
               <button class="readmore__toggle" role="switch" aria-checked="true">
-                  Show more
+                Preberi Več
               </button>
               </button>
           </div>
@@ -484,12 +484,12 @@
         if (targetEvent.getAttribute('aria-checked') === 'true') {
             targetEvent.setAttribute('aria-checked', 'false')
             contentToggle.innerHTML = this.stateContent;
-            this.buttonToggle.innerHTML = 'Show less'
+            this.buttonToggle.innerHTML = 'Preberi Manj'
 
         } else {
             targetEvent.setAttribute('aria-checked', 'true')
             contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`
-            this.buttonToggle.innerHTML = 'Show more'
+            this.buttonToggle.innerHTML = 'Preberi Več'
         }
     }
 }
