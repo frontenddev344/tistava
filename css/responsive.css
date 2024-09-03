@@ -313,6 +313,9 @@ h4 {
   a.primary-button {
     padding: 12px 12px;
   }
+  .disclaimer-wrapper p{
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 575px) {
   .site-logo img {
