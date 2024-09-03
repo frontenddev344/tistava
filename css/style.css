@@ -748,7 +748,9 @@ footer.section-footer.ptb-50 {
 .faq-section h2 {
   margin-top: 38px;
 }
-
+.faq-section {
+  padding: 50px 0 0;
+}
 /*events-css-end*/
 /*sight-css-start*/
 .sightbanner.banner {
