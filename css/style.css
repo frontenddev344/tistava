@@ -846,6 +846,9 @@ font-weight: normal;
 .form_wrapper textarea {
   resize: none;
 }
+.form_wrapper textarea::placeholder {
+  color: var(--green);
+}
 .form_wrapper .btn_contact{
   margin: initial;
 }
