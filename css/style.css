@@ -800,13 +800,17 @@ font-weight: normal;
   display: flex;
   gap: 1rem;
 }
+/* returnRefund section */
+.returnRefund__section{
+  text-align: center;
+}
 /* return and refund section */
 .returnRefund__section{
-  background-image: url("../images/return-and-refund.jpg");
+  background-image: url("../images/Returns_and_Exchanges.png");
 }
 /* personalData__section */
 .personalData__section{
-  background-image: url("../images/personal-data-image.avif");
+  background-image: url("../images/personal-data-image.jpg");
 }
 /* about section */
 .about__section{
