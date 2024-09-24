@@ -849,6 +849,7 @@ font-weight: normal;
 }
 .form_wrapper textarea {
   resize: none;
+  padding-left: 1rem;
 }
 .form_wrapper textarea::placeholder {
   color: var(--green);
