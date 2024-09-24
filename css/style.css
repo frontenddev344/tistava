@@ -250,6 +250,12 @@ nav.site-nav {
 .footer-logo img {
   max-width: 200px;
 }
+.footer_img{
+  max-width: 120px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+}
 
 .footer-heading h4 {
   color: var(--skin);
@@ -779,5 +785,73 @@ button.readmore__toggle {
 .readmore__content p {
   text-align: center;
 }
-
+/* Personal-data-policy section */
+.subtitle .content-wrap .list_items li{
+font-weight: 600; 
+}
+.subtitle .content-wrap li{
+  list-style: disc;
+  margin-left: 16px;
+}
+.subtitle .content-wrap .list_items li span{
+font-weight: normal;
+}
+.scials_icon{
+  display: flex;
+  gap: 1rem;
+}
+/* return and refund section */
+.returnRefund__section{
+  background-image: url("../images/return-and-refund.jpg");
+}
+/* personalData__section */
+.personalData__section{
+  background-image: url("../images/personal-data-image.avif");
+}
+/* about section */
+.about__section{
+  background-image: url("../images/about.jpg");
+}
+/* contact form section */
+.contact__section{
+  background-image: url("../images/conatct-us.jpg");
+}
+.form_wrapper{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.form_label{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+.form_label input{
+  padding: 1rem;
+}
+.form_label input::placeholder{
+ color: var(--green);
+}
+.form_label input,textarea{
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+.form_wrapper textarea {
+  resize: none;
+}
+.form_wrapper .btn_contact{
+  margin: initial;
+}
+.form_wrapper .btn_contact{
+ padding-block: 6px;
+}
 /*# sourceMappingURL=style.css.map */
+
+

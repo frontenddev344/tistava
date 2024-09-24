@@ -330,6 +330,18 @@ h4 {
   .faq-question {
     font-size: 15px;
   }
+  .form_wrapper{
+    flex-direction: column;
+  }
+  .form_left{
+    text-align: center;
+  }
+  .scials_icon{
+  justify-content: center;
+  }
+  .form_right{
+    width: 100%;
+  }
 }
 
 
